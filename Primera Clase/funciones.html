@@ -1,0 +1,87 @@
+<!-- Paso 1: Crear interfaz en HTML donde se puedan digitar los números entre los cuales se harán las diferentes operciones
+Paso 2: Usando la etiqueta <script> empezar a crear funciones las respectivas funciones
+Paso 3: Declarar las variables de número 1 y número 2
+Paso 4: Convertir los datos a tipo numérico
+Paso 5: Guardar en una variable el resultado de las operaciones entre las dos variables (número 1 y número 2)
+Paso 6: Mostrar en el documento HTML el resultado de las operaciones que se le asisgnen valores-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Funciones</title>
+</head>
+
+<body>
+    <p>Ejercicio Funciones</p>
+</body>
+<button onclick="suma()">SUMA</button>
+<input id="num1" type="number" placeholder="Registre el número 1">
+<input id="num2" type="number" placeholder="Registre el número 2">
+<label id="r1"></label>
+<br>
+<button onclick="resta()">RESTA</button>
+<input id="num3" type="number" placeholder="Registre el número 1">
+<input id="num4" type="number" placeholder="Registre el número 2">
+<label id="r2"></label>
+<br>
+<button onclick="division()">DIVISION</button>
+<input id="num5" type="number" placeholder="Registre el número 1">
+<input id="num6" type="number" placeholder="Registre el número 2">
+<label id="r3"></label>
+<br>
+<button onclick="multiplicacion()">MULTIPLICACION</button>
+<input id="num7" type="number" placeholder="Registre el número 1">
+<input id="num8" type="number" placeholder="Registre el número 2">
+<label id="r4"></label>
+
+</html>
+<style>
+    p {
+        color: fuchsia;
+    }
+
+    label {
+        color: aqua;
+    }
+</style>
+
+<script>
+
+    function suma() {
+        let num1 = document.getElementById('num1').value;
+        let num2 = document.getElementById('num2').value;
+        let n1 = parseFloat(num1);
+        let n2 = parseFloat(num2);
+        let resultado = n1 + n2;
+        let r1 = document.getElementById('r1').innerHTML = resultado;
+    }
+
+    function resta() {
+        let num1 = document.getElementById('num3').value;
+        let num2 = document.getElementById('num4').value;
+        let n1 = parseFloat(num1);
+        let n2 = parseFloat(num2);
+        let resultado = n1 - n2;
+        let r1 = document.getElementById('r2').innerHTML = resultado;
+    }
+
+    function division() {
+        let num1 = document.getElementById('num5').value;
+        let num2 = document.getElementById('num6').value;
+        let n1 = parseFloat(num1);
+        let n2 = parseFloat(num2);
+        let resultado = n1 / n2;
+        let r1 = document.getElementById('r3').innerHTML = resultado;
+    }
+
+    function multiplicacion() {
+        let num1 = document.getElementById('num7').value;
+        let num2 = document.getElementById('num8').value;
+        let n1 = parseFloat(num1);
+        let n2 = parseFloat(num2);
+        let resultado = n1 + n2;
+        let r1 = document.getElementById('r4').innerHTML = resultado;
+    }
+</script>
