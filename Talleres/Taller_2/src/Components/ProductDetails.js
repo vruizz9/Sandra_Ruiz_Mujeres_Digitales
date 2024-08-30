@@ -9,7 +9,6 @@ const ProductDetails = ({ product, onAddToCart }) => {
 
   return (
     <Card className="mb-4">
-      {/* Agrega la imagen del producto */}
       <Card.Img variant="top" src={product.image} alt={product.name} />
 
       <Card.Body>
