@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    font-family: "Manrope";
+    font-weight: 800;
+}
+.card{
+    background-color: hsl(217, 19%, 24%);
+    width: 37%; 
+    border-radius: 15px;
+}
+.custom-title{
+    letter-spacing: 5.12px;
+    font-size: 13px;
+    color: hsl(150, 100%, 66%);
+}
+.card-text{
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+.custom-color-divider{
+    width: 90%;
+    color:  hsl(217, 19%, 38%);
+}
+.circular{
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 600px;
+    border: none;
+    padding: 45%;
+    top: 65%;
+    right: -20%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efecto suave */
+}
+.circular:hover {
+    background-color: hsl(150, 100%, 66%); /* Cambio de color en hover */
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.5); /* Sombra luminosa alrededor */
+
+}
+.circular:hover img {
+    transform: scale(1.1); /* Escalar ligeramente el ícono */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+@media  (max-width: 575px) {
+    .card{
+        width: 90%;
+    }
+    .custom-title{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 23px;
+    }
+    .custom-color-divider{
+        width: 100%;
+    }   
+}
